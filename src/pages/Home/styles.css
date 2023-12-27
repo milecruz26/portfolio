@@ -1,0 +1,174 @@
+@import url("../../styles/global.css");
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--white);
+}
+main {
+  margin: 5.6rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.apresetation-section {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 31.2rem;
+  height: 14.1rem;
+}
+
+.apresetation-section h1 {
+  color: var(--white);
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.apresetation-section h3 {
+  color: var(--dark-40);
+  font-size: 1.6rem;
+  width: 19.8rem;
+  text-align: center;
+}
+
+.apresetation-section div {
+  display: flex;
+  justify-content: space-between;
+  width: 31.2rem;
+}
+.apresetation-section div > button {
+  width: 15rem;
+  height: 3rem;
+  font-family: "DM Sans";
+  font-weight: 500;
+}
+
+.download-cv-btn {
+  padding: 0.8rem 2.8rem;
+  background-color: var(--brand-color);
+  color: var(--dark-10);
+  border: none;
+  font-size: 1.2rem;
+}
+.contact-btn {
+  padding: 0.836rem 1.2rem;
+  background-color: var(--dark-10);
+  color: var(--white);
+  border: 0.697px solid #333;
+  font-size: 0.9rem;
+}
+
+.about-me-section {
+  /* margin: 3rem auto; */
+  height: 51.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.about-me-section h1 {
+  color: var(--white);
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+}
+.about-me-section p {
+  text-align: justify;
+  color: var(--dark-40);
+  font-size: 1.4rem;
+}
+
+.icons-divs {
+  display: flex;
+  height: 19rem;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.circle-icon {
+  display: flex;
+  align-items: center;
+  background-color: var(--dark-20);
+  border-radius: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
+}
+.circle-icon img {
+  margin: 0 auto;
+}
+
+.icons-divs > div {
+  display: flex;
+  min-width: 14rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icons-divs div > h3 {
+  color: var(--white);
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.icons-divs div > h4 {
+  color: var(--dark-40);
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.container-projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 70rem;
+}
+.container-projects > h2 {
+  color: var(--white);
+}
+
+.container-projects > div {
+  padding: 1.1rem 1.8rem;
+  width: 31.2rem;
+  height: 17.4rem;
+  flex-shrink: 0;
+  border: 0.725px solid var(--dark-30);
+  background-color: var(--dark-30);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.project > figure {
+  width: 27.5rem;
+  height: 10rem;
+  /* margin-bottom: 0.75rem; */
+  background-size: cover;
+}
+.Um > figure {
+  background-image: url("../../assets/projects-img/app-dindin.svg");
+}
+.Dois > figure {
+  background-image: url("../../assets/projects-img/player.png");
+}
+.três > figure {
+  background-image: url("../../assets/projects-img/desafio-05.svg");
+}
+
+.project > h3 {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.project > h4 {
+  color: var(--dark-40);
+  font-weight: 400;
+  font-size: 1.1rem;
+}
