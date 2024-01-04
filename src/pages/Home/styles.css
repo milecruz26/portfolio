@@ -4,6 +4,7 @@ header {
   align-items: center;
   justify-content: space-between;
   color: var(--white);
+  font-size: 1.4rem;
 }
 main {
   margin: 5.6rem auto;
@@ -100,6 +101,8 @@ main {
 }
 .circle-icon img {
   margin: 0 auto;
+  height: 2.8rem;
+  width: 2.8rem;
 }
 
 .icons-divs > div {
@@ -129,9 +132,6 @@ main {
   align-items: center;
   min-height: 70rem;
 }
-.container-projects > h2 {
-  color: var(--white);
-}
 
 .container-projects > div {
   padding: 1.1rem 1.8rem;
@@ -148,7 +148,6 @@ main {
 .project > figure {
   width: 27.5rem;
   height: 10rem;
-  /* margin-bottom: 0.75rem; */
   background-size: cover;
 }
 .Um > figure {
@@ -171,4 +170,31 @@ main {
   color: var(--dark-40);
   font-weight: 400;
   font-size: 1.1rem;
+}
+
+.service-section {
+  display: flex;
+  flex-direction: column;
+  height: 39rem;
+  justify-content: space-evenly;
+}
+
+.container-service {
+  border-bottom: 0.3rem solid var(--brand-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 31.1rem;
+  height: 14rem;
+  background-color: var(--dark-20);
+  gap: 0.8rem;
+}
+
+.container-service h3 {
+  color: var(--dark-40);
+}
+.skill-section {
+  display: flex;
+  flex-direction: column;
 }

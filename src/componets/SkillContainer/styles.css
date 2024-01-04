@@ -1,0 +1,21 @@
+.container-skils {
+  display: flex;
+  height: 26rem;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.card-skill {
+  height: 9rem;
+  width: 9rem;
+  background-color: #212121;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem 0.5rem;
+}
+
+.card-skill img {
+  height: 5rem;
+}

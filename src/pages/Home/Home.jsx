@@ -1,15 +1,19 @@
 import "./styles.css";
+import CodeIcon from "../../assets/image/code.svg";
+import SmartphoneIcon from "../../assets/image/smartphone.svg";
 import EmailIcon from "../../assets/image/email.svg";
 import SmileIcon from "../../assets/image/smile.svg";
-import InstagramIcon from "../../assets/image/instagram.svg";
-import PhoneIcon from "../../assets/image/phone.svg";
+import GitHubIcon from "../../assets/image/github.svg";
+import WhatsAppIcon from "../../assets/image/whatsapp.svg";
 import MenuSand from "../../assets/image/menu-hamburguer.svg";
+import { ServicesContainer } from "../../componets/ServicesContainer/ServicesContainer";
+import { SkillContainer } from "../../componets/SkillContainer/SkillContainer";
 
 export const Home = () => {
   return (
     <div className="container">
       <header>
-        <h2>Portfólio</h2>
+        <h3>Portfólio</h3>
         <img src={MenuSand} alt="" />
       </header>
       <main>
@@ -42,7 +46,7 @@ export const Home = () => {
 
             <div>
               <div className="circle-icon">
-                <img src={InstagramIcon} alt="" />
+                <img src={GitHubIcon} alt="" />
               </div>
               <h3>GitHub</h3>
               <h4>@milecruz26</h4>
@@ -56,7 +60,7 @@ export const Home = () => {
             </div>
             <div>
               <div className="circle-icon">
-                <img src={PhoneIcon} alt="" />
+                <img src={WhatsAppIcon} alt="" />
               </div>
               <h3>Telefone:</h3>
               <h4>85 98783 0966</h4>
@@ -82,6 +86,26 @@ export const Home = () => {
             <h3>WebApp Controle de Cobranças</h3>
             <h4>Tecnologias: HTML, CSS e JS</h4>
           </div>
+        </section>
+
+        <section className="service-section">
+          <h2>Serviços</h2>
+          <ServicesContainer
+            className={"container-service"}
+            srcImg={CodeIcon}
+            service={"Criação de sites"}
+          />
+          <ServicesContainer
+            className={"container-service"}
+            srcImg={SmartphoneIcon}
+            service={"Sites responsivos"}
+          />
+        </section>
+
+        <section className="skill-section">
+          <h2>Minhas skills</h2>
+
+          <SkillContainer />
         </section>
       </main>
     </div>
