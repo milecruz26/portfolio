@@ -63,7 +63,6 @@ main {
 }
 
 .about-me-section {
-  /* margin: 3rem auto; */
   height: 51.4rem;
   display: flex;
   flex-direction: column;
@@ -197,4 +196,45 @@ main {
 .skill-section {
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (width: 1280px) and (height: 800px) {
+  header > img {
+    display: none;
+  }
+
+  header nav ul {
+    border: 1px solid red;
+    width: 40rem;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+  main {
+    max-width: 95vw;
+  }
+  .apresetation-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid red;
+    width: 95vw;
+    height: 40vh;
+  }
+
+  .teste1 {
+    display: flex;
+    flex-flow: row wrap;
+    /* flex-direction: column; */
+    border: 1px solid green;
+  }
+
+  .teste-img {
+    border: 1px solid magenta;
+    height: 25rem;
+    width: 25rem;
+  }
 }

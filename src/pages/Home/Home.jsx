@@ -6,6 +6,7 @@ import SmileIcon from "../../assets/image/smile.svg";
 import GitHubIcon from "../../assets/image/github.svg";
 import WhatsAppIcon from "../../assets/image/whatsapp.svg";
 import MenuSand from "../../assets/image/menu-hamburguer.svg";
+import GameDev from "../../assets/garota-dev.png";
 import { ServicesContainer } from "../../componets/ServicesContainer/ServicesContainer";
 import { SkillContainer } from "../../componets/SkillContainer/SkillContainer";
 
@@ -15,15 +16,26 @@ export const Home = () => {
       <header>
         <h3>Portfólio</h3>
         <img src={MenuSand} alt="" />
+        <nav>
+          <ul>
+            <li>Sobre mim</li>
+            <li>Projetos</li>
+            <li>Serviços</li>
+            <li>Minhas skills</li>
+          </ul>
+        </nav>
       </header>
       <main>
         <section className="apresetation-section">
-          <h1>Olá, eu sou a Jamile Cruz </h1>
-          <h3>Desenvolvedora FullStack e Front-End</h3>
-          <div>
-            <button className="download-cv-btn">Download CV</button>
-            <button className="contact-btn">Entrar em contato</button>
+          <div className="teste1">
+            <h1>Olá, eu sou a Jamile Cruz </h1>
+            <h3>Desenvolvedora FullStack e Front-End</h3>
+            <div>
+              <button className="download-cv-btn">Download CV</button>
+              <button className="contact-btn">Entrar em contato</button>
+            </div>
           </div>
+          <img src={GameDev} alt="" className="teste-img" />
         </section>
         <section className="about-me-section">
           <h1>Sobre Mim</h1>
