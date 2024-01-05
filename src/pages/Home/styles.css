@@ -35,7 +35,7 @@ main {
   text-align: center;
 }
 
-.teste1 {
+.container-title-btns {
   display: flex;
   justify-content: space-between;
   width: 31.2rem;
@@ -138,23 +138,25 @@ main {
   }
 
   .apresetation-section {
-    /* border: 1px solid red; */
+    /* border: 1px solid blue; */
     width: 100%;
     height: 45vh;
-  }
-
-  .apresetation-section {
-    /* border: 1px solid blue; */
     margin: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .apresetation-section h3 {
-    width: 30rem;
+  .apresetation-section h1 {
+    /* border: 1px solid red; */
+    font-size: 3.6rem;
   }
-  .teste1 {
+
+  .apresetation-section h3 {
+    font-size: 1.8rem;
+    width: 35rem;
+  }
+  .container-title-btns {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -164,12 +166,12 @@ main {
     /* border: 1px solid green; */
   }
 
-  .teste1 > div {
+  .container-title-btns > div {
     display: flex;
     justify-content: space-between;
   }
 
-  .teste1 div button {
+  .container-title-btns div button {
     height: 4.2rem;
     font-size: 1.4rem;
   }
@@ -190,7 +192,12 @@ main {
     margin-right: 6rem;
   }
 
+  .about-me-section {
+    height: 70rem;
+  }
+
   .about-me-section > p {
+    font-size: 1.8rem;
     width: 65vw;
   }
   .container-projects {
@@ -249,5 +256,24 @@ main {
   header > nav {
     min-width: 30vw;
     max-width: 50vw;
+  }
+
+  .apresetation-section h1 {
+    width: 15vw;
+  }
+
+  .container-title-btns {
+    /* border: 1px solid red; */
+    height: 22vh;
+    width: 20vw;
+  }
+
+  .container-title-btns > div {
+    width: 17vw;
+  }
+
+  .about-me-section > p {
+    text-align: center;
+    width: 61vw;
   }
 }

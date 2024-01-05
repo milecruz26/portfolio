@@ -29,7 +29,7 @@ export const Home = () => {
       </header>
       <main>
         <section className="apresetation-section">
-          <div className="teste1">
+          <div className="container-title-btns">
             <h1>Olá, eu sou a Jamile Cruz! </h1>
             <h3>Desenvolvedora FullStack e Front-End</h3>
             <div>
