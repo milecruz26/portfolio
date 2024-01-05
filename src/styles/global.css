@@ -1,12 +1,29 @@
 :root {
-  --brand-color: #c500df;
-  --dark-10: #171717;
+  --brand-color: #5b319aff;
+  --dark-10: #0f0f0fff;
   --dark-20: #212121;
   --dark-30: #333333;
   --dark-40: #828282;
   --dark-50: #eae7e7;
   --white: #f9f9f9;
 }
+/* :root {
+  --brand-color: rgb(79, 25, 118);
+  --dark-10: #171717;
+  --dark-20: #212121;
+  --dark-30: #333333;
+  --dark-40: #828282;
+  --dark-50: #eae7e7;
+  --white: #f9f9f9;
+} */
+
+/* 
+--rebecca-purple: #5b319aff;
+--tekhelet: #483187ff;
+--night: #0f0f0fff;
+--slate-blue: #7259c3ff;
+--tropical-indigo: #887bc8ff;
+*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -20,7 +37,7 @@ html {
 
 body {
   background-color: var(--dark-10);
-  display: flex;
+  /* display: flex; */
 }
 
 h2 {
@@ -31,11 +48,23 @@ h2 {
 }
 .container {
   margin: 2.4rem;
-  /* border: 1px solid red; */
 }
 
-@media screen and (width: 1280px) and (height: 800px) {
-  /* .container {
-    margin: 3rem 5rem;
-  } */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .container {
+    padding: 3rem 4rem;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    padding: 3rem 3rem;
+    margin: 0 5rem;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2000px) {
+  .container {
+    padding: 4rem 7rem;
+    margin: 0;
+  }
 }

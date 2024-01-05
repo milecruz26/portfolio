@@ -1,0 +1,63 @@
+.icons-divs {
+  display: flex;
+  height: 19rem;
+  width: 60vw;
+  align-items: center;
+  justify-content: space-between;
+}
+.icons-divs > div {
+  display: flex;
+  min-width: 14rem;
+  flex-direction: column;
+  align-items: center;
+}
+.circle-icon {
+  display: flex;
+  align-items: center;
+  background-color: var(--dark-20);
+  border-radius: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
+}
+.circle-icon img {
+  margin: 0 auto;
+  height: 2.8rem;
+  width: 2.8rem;
+}
+
+.icons-divs div > h3 {
+  color: var(--white);
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.icons-divs div > h4 {
+  color: var(--dark-40);
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .icons-divs {
+    display: flex;
+    height: 22vh;
+    width: 70vw;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .icons-divs > div {
+    display: flex;
+    height: 15vh;
+    min-width: 14rem;
+    justify-content: space-evenly;
+  }
+
+  .icons-divs div > h3 {
+    font-size: 1.8rem;
+  }
+  .icons-divs div > h4 {
+    font-size: 1.6rem;
+  }
+}

@@ -6,9 +6,11 @@ import SmileIcon from "../../assets/image/smile.svg";
 import GitHubIcon from "../../assets/image/github.svg";
 import WhatsAppIcon from "../../assets/image/whatsapp.svg";
 import MenuSand from "../../assets/image/menu-hamburguer.svg";
-import GameDev from "../../assets/garota-dev.png";
+import GameDev from "../../assets/game-dev-2.png";
 import { ServicesContainer } from "../../componets/ServicesContainer/ServicesContainer";
 import { SkillContainer } from "../../componets/SkillContainer/SkillContainer";
+import { CircleIcon } from "../../componets/CircleIcon/CircleIcon";
+import { Projects } from "../../componets/Projects/Projects";
 
 export const Home = () => {
   return (
@@ -28,7 +30,7 @@ export const Home = () => {
       <main>
         <section className="apresetation-section">
           <div className="teste1">
-            <h1>Olá, eu sou a Jamile Cruz </h1>
+            <h1>Olá, eu sou a Jamile Cruz! </h1>
             <h3>Desenvolvedora FullStack e Front-End</h3>
             <div>
               <button className="download-cv-btn">Download CV</button>
@@ -40,78 +42,52 @@ export const Home = () => {
         <section className="about-me-section">
           <h1>Sobre Mim</h1>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident
-            maxime exercitationem hic vel quasi quos quis illum expedita quam
-            facilis soluta atque, omnis dicta temporibus nihil, accusantium sunt
-            praesentium molestias natus voluptatem voluptate perspiciatis!
-            Minima itaque deleniti iste, nulla mollitia eum labore debitis
-            aliquid incidunt officia aperiam cumque minus tempore?
+            Sou uma cearense apaixonada por games. É por isso que neste ano
+            iniciei a minha transição de carreira para área de tecnologia.
+            <br />
+            <br />
+            Sou Publicitária, trabalhei durante 6 anos com marketing digital
+            atuando como Social Media, Produtora de Conteúdo e Copywriter em
+            agências de publicidade em Fortaleza, mas sempre tive vontade de
+            migrar para carreira de tecnologia com o desejo de trabalhar com
+            jogos.
+            <br />
+            <br />
+            Em janeiro deste ano resolvi dar o meu primeiro grande salto de fé
+            no mundo da tecnologia e, atualmente, estou fazendo um curso de
+            Desenvolvimento de Software FullStack pela Cubos Academy.
+            <br />
+            <br />
+            Na minha carreira anterior sempre trabalhei com equipes
+            multidisciplinares, com planejamento estratégico, bastante
+            criatividade e responsabilidades de autogestão e organização, e essa
+            experiência com certeza me ajudará bastante na minha nova jornada
+            como Dev.
           </p>
-          <div className="icons-divs">
-            <div>
-              <div className="circle-icon">
-                <img src={SmileIcon} alt="" />
-              </div>
-              <h3>Meu nome</h3>
-              <h4>Jamile Cruz</h4>
-            </div>
-
-            <div>
-              <div className="circle-icon">
-                <img src={GitHubIcon} alt="" />
-              </div>
-              <h3>GitHub</h3>
-              <h4>@milecruz26</h4>
-            </div>
-            <div>
-              <div className="circle-icon">
-                <img src={EmailIcon} alt="" />
-              </div>
-              <h3>E-mail</h3>
-              <h4>mile.criacoes2603@gmail.com</h4>
-            </div>
-            <div>
-              <div className="circle-icon">
-                <img src={WhatsAppIcon} alt="" />
-              </div>
-              <h3>Telefone:</h3>
-              <h4>85 98783 0966</h4>
-            </div>
-          </div>
+          <CircleIcon />
         </section>
 
         <section className="container-projects">
           <h2>Projetos</h2>
-          <div className="project Um">
-            <figure></figure>
-            <h3>WebApp controle de finanças</h3>
-            <h4>Tecnologias: HTML, CSS e JS</h4>
-          </div>
-          <div className="project Dois">
-            <figure></figure>
-
-            <h3>Player de Música</h3>
-            <h4>Tecnologias: HTML, CSS e JS</h4>
-          </div>
-          <div className="project três">
-            <figure></figure>
-            <h3>WebApp Controle de Cobranças</h3>
-            <h4>Tecnologias: HTML, CSS e JS</h4>
+          <div>
+            <Projects />
           </div>
         </section>
 
         <section className="service-section">
           <h2>Serviços</h2>
-          <ServicesContainer
-            className={"container-service"}
-            srcImg={CodeIcon}
-            service={"Criação de sites"}
-          />
-          <ServicesContainer
-            className={"container-service"}
-            srcImg={SmartphoneIcon}
-            service={"Sites responsivos"}
-          />
+          <div>
+            <ServicesContainer
+              className={"container-service"}
+              srcImg={CodeIcon}
+              service={"Criação de sites"}
+            />
+            <ServicesContainer
+              className={"container-service"}
+              srcImg={SmartphoneIcon}
+              service={"Sites responsivos"}
+            />
+          </div>
         </section>
 
         <section className="skill-section">

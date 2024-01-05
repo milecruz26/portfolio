@@ -19,3 +19,16 @@
 .card-skill img {
   height: 5rem;
 }
+
+@media screen and (min-width: 1024px) {
+  .container-skils {
+    display: flex;
+    height: 26rem;
+    flex-flow: nowrap;
+    justify-content: space-around;
+  }
+  .card-skill {
+    height: 13rem;
+    width: 13rem;
+  }
+}
