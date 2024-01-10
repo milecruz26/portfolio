@@ -8,6 +8,12 @@ import { CircleIcon } from "../../componets/CircleIcon/CircleIcon";
 import { Projects } from "../../componets/Projects/Projects";
 
 export const Home = () => {
+  const openCurriculo = () => {
+    const arquivo = "/CV_Jamile_Cruz_da_Silva.pdf";
+
+    window.open(arquivo, "_blank");
+  };
+
   return (
     <div className="container">
       <header>
@@ -36,7 +42,9 @@ export const Home = () => {
             <h1>Olá, eu sou a Jamile Cruz! </h1>
             <h3>Desenvolvedora FullStack e Front-End</h3>
             <div>
-              <button className="download-cv-btn">Download CV</button>
+              <button className="download-cv-btn" onClick={openCurriculo}>
+                Download CV
+              </button>
               <button className="contact-btn">Entrar em contato</button>
             </div>
           </div>
