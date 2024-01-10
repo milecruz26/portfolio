@@ -1,12 +1,7 @@
 import "./styles.css";
 import CodeIcon from "../../assets/image/code.svg";
 import SmartphoneIcon from "../../assets/image/smartphone.svg";
-import EmailIcon from "../../assets/image/email.svg";
-import SmileIcon from "../../assets/image/smile.svg";
-import GitHubIcon from "../../assets/image/github.svg";
-import WhatsAppIcon from "../../assets/image/whatsapp.svg";
 import MenuSand from "../../assets/image/menu-hamburguer.svg";
-import GameDev from "../../assets/game-dev-2.png";
 import { ServicesContainer } from "../../componets/ServicesContainer/ServicesContainer";
 import { SkillContainer } from "../../componets/SkillContainer/SkillContainer";
 import { CircleIcon } from "../../componets/CircleIcon/CircleIcon";
@@ -20,10 +15,18 @@ export const Home = () => {
         <img src={MenuSand} alt="" />
         <nav>
           <ul>
-            <li>Sobre mim</li>
-            <li>Projetos</li>
-            <li>Serviços</li>
-            <li>Minhas skills</li>
+            <li>
+              <a href="#about-me">Sobre mim</a>
+            </li>
+            <li>
+              <a href="#projects">Projetos</a>
+            </li>
+            <li>
+              <a href="#services">Serviços</a>
+            </li>
+            <li>
+              <a href="#my-skills">Minhas skills</a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -37,9 +40,9 @@ export const Home = () => {
               <button className="contact-btn">Entrar em contato</button>
             </div>
           </div>
-          <img src={GameDev} alt="" className="teste-img" />
+          <div className="imagem"></div>
         </section>
-        <section className="about-me-section">
+        <section className="about-me-section" id="about-me">
           <h1>Sobre Mim</h1>
           <p>
             Sou uma cearense apaixonada por games. É por isso que neste ano
@@ -67,30 +70,25 @@ export const Home = () => {
           <CircleIcon />
         </section>
 
-        <section className="container-projects">
+        <section className="container-projects" id="projects">
           <h2>Projetos</h2>
           <div>
             <Projects />
           </div>
         </section>
 
-        <section className="service-section">
+        <section className="service-section" id="services">
           <h2>Serviços</h2>
           <div>
+            <ServicesContainer srcImg={CodeIcon} service={"Criação de sites"} />
             <ServicesContainer
-              className={"container-service"}
-              srcImg={CodeIcon}
-              service={"Criação de sites"}
-            />
-            <ServicesContainer
-              className={"container-service"}
               srcImg={SmartphoneIcon}
               service={"Sites responsivos"}
             />
           </div>
         </section>
 
-        <section className="skill-section">
+        <section className="skill-section" id="my-skills">
           <h2>Minhas skills</h2>
 
           <SkillContainer />

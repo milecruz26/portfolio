@@ -6,20 +6,30 @@ header {
   color: var(--white);
   font-size: 1.4rem;
 }
+
+header nav {
+  display: none;
+}
 main {
-  margin: 5.6rem auto;
+  margin: 2rem auto;
   display: flex;
   flex-direction: column;
 }
 
 .apresetation-section {
-  margin: 0 auto;
+  /* border: 1px solid red; */
+  margin: 2rem 0 3rem 0;
+  /* margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   width: 31.2rem;
-  height: 14.1rem;
+  height: 14.1rem; */
+}
+
+.apresetation-section img {
+  display: none;
 }
 
 .apresetation-section h1 {
@@ -36,35 +46,47 @@ main {
 }
 
 .container-title-btns {
+  /* border: 1px solid red; */
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 25vh;
+
+  /* display: flex;
   justify-content: space-between;
-  width: 31.2rem;
+  width: 31.2rem; */
 }
 
-.apresetation-section div > button {
+.container-title-btns div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-title-btns div > button {
   width: 15rem;
   height: 3rem;
   font-family: "DM Sans";
   font-weight: 500;
+  color: var(--white);
 }
 
 .download-cv-btn {
-  padding: 0.8rem 2.8rem;
   background-color: var(--brand-color);
-  color: var(--dark-10);
   border: none;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 .contact-btn {
-  padding: 0.836rem 1.2rem;
   background-color: var(--dark-10);
-  color: var(--white);
   border: 0.697px solid #333;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 
 .about-me-section {
-  height: 51.4rem;
+  /* height: 51.4rem; */
+
+  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,43 +97,49 @@ main {
   font-size: 2.4rem;
   font-weight: 700;
   text-align: center;
+  margin-bottom: 2rem;
 }
 .about-me-section p {
-  text-align: justify;
+  text-align: center;
+  font-weight: 400;
+
   color: var(--dark-40);
   font-size: 1.4rem;
 }
 
 .container-projects {
+  /* border: 1px solid red; */
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  min-height: 70rem;
+  height: 65rem;
 }
-
-.service-section {
+.container-projects > div {
+  /* border: 1px solid red; */
+  height: 60rem;
   display: flex;
   flex-direction: column;
-  height: 39rem;
   justify-content: space-evenly;
 }
 
-.container-service {
-  border-bottom: 0.3rem solid var(--brand-color);
+.service-section {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  height: 45rem;
+  justify-content: space-evenly;
+}
+.service-section > div {
+  /* border: 1px solid red; */
+  height: 35rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 31.1rem;
-  height: 14rem;
-  background-color: var(--dark-20);
-  gap: 0.8rem;
+  justify-content: space-evenly;
 }
 
-.container-service h3 {
-  color: var(--dark-40);
-}
 .skill-section {
   display: flex;
   flex-direction: column;
@@ -119,6 +147,13 @@ main {
 @media screen and (min-width: 1024px) and (max-width: 2000px) {
   header > img {
     display: none;
+  }
+
+  header > nav {
+    /* border: 1px solid red; */
+    display: block;
+    /* width: 43%; */
+    width: max(43%, 43rem);
   }
 
   header nav ul {
@@ -133,16 +168,26 @@ main {
     cursor: pointer;
   }
 
+  header nav ul li > a {
+    text-decoration: none;
+    color: var(--white);
+  }
+
+  header nav ul li > a:hover {
+    color: var(--dark-40);
+  }
+
   main {
     margin: 0;
   }
 
   .apresetation-section {
     /* border: 1px solid blue; */
-    width: 100%;
+    /* width: 100%; */
     height: 45vh;
     margin: 0;
     display: flex;
+    align-items: center;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -154,16 +199,18 @@ main {
 
   .apresetation-section h3 {
     font-size: 1.8rem;
-    width: 35rem;
+    width: 25rem;
+    text-align: left;
   }
   .container-title-btns {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: flex-start;
+    justify-content: space-evenly;
 
-    height: 20vh;
-    width: 25vw;
-    /* border: 1px solid green; */
+    height: 100%;
+    width: 31vw;
+    /* border: 1px solid blue; */
   }
 
   .container-title-btns > div {
@@ -174,6 +221,7 @@ main {
   .container-title-btns div button {
     height: 4.2rem;
     font-size: 1.4rem;
+    cursor: pointer;
   }
 
   .download-cv-btn {
@@ -185,11 +233,14 @@ main {
     width: 15.7rem;
   }
 
-  .teste-img {
-    /* border: 1px solid magenta; */
-    height: 28rem;
-    width: 28rem;
-    margin-right: 6rem;
+  .imagem {
+    /* border: 1px solid red; */
+    height: 95%;
+    width: 40vw;
+    background-image: url("../../assets/game-dev-2.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .about-me-section {
@@ -201,37 +252,29 @@ main {
     width: 65vw;
   }
   .container-projects {
-    min-height: 50vh;
+    /* border: 1px solid blue; */
+    height: 43vh;
   }
   .container-projects > div {
+    /* border: 1px solid blue; */
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
   }
 
+  .service-section {
+    /* border: 1px solid blue; */
+    display: flex;
+    height: 45rem;
+    justify-content: space-evenly;
+  }
+
   .service-section > div {
+    /* border: 1px solid blue; */
     display: flex;
-    justify-content: space-around;
-  }
-
-  .container-service {
-    border-bottom: 0.3rem solid var(--brand-color);
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    width: 35rem;
-    height: 24rem;
-    background-color: var(--dark-20);
-  }
-
-  .container-service h3 {
-    width: 12.6rem;
-    color: var(--dark-40);
-    font-size: 2.6rem;
-    font-weight: 500;
+    flex-wrap: wrap;
   }
 }
 
@@ -251,6 +294,11 @@ main {
   .apresetation-section h1 {
     width: 20rem;
   }
+
+  .container-title-btns > div {
+    width: 80%;
+    /* border: 1px solid blue; */
+  }
 }
 @media screen and (min-width: 1440px) {
   header > nav {
@@ -259,21 +307,54 @@ main {
   }
 
   .apresetation-section h1 {
-    width: 15vw;
-  }
-
-  .container-title-btns {
-    /* border: 1px solid red; */
-    height: 22vh;
-    width: 20vw;
-  }
-
-  .container-title-btns > div {
-    width: 17vw;
+    width: 22vw;
   }
 
   .about-me-section > p {
     text-align: center;
     width: 61vw;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  header > nav {
+    min-width: 30vw;
+    max-width: 50vw;
+  }
+
+  .apresetation-section {
+    /* border: 1px solid green; */
+    margin-bottom: 5rem;
+  }
+
+  .container-title-btns > h1 {
+    width: 15vw;
+    font-size: 4.2rem;
+  }
+
+  .container-title-btns > h3 {
+    font-size: 2.2rem;
+  }
+
+  .container-title-btns > div {
+    width: 70%;
+  }
+
+  .container-title-btns > div > button {
+    width: 48%;
+    height: 4.5rem;
+    font-size: 1.6rem;
+  }
+
+  .about-me-section > p {
+    text-align: center;
+    width: 61vw;
+    font-size: 2.5rem;
+  }
+
+  .container-projects {
+    /* border: 1px solid green; */
+    margin: 6rem 0;
+    max-height: 45vh;
   }
 }

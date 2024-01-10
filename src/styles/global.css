@@ -1,5 +1,7 @@
 :root {
   --brand-color: #5b319aff;
+  --brand-color-2: #5405cb;
+  --brand-color-3: #6c00df;
   --dark-10: #0f0f0fff;
   --dark-20: #212121;
   --dark-30: #333333;
@@ -15,6 +17,8 @@
   --dark-40: #828282;
   --dark-50: #eae7e7;
   --white: #f9f9f9;
+
+  --color: #c500df
 } */
 
 /* 
@@ -47,10 +51,11 @@ h2 {
   font-weight: 700;
 }
 .container {
-  margin: 2.4rem;
+  /* border: 1px solid red; */
+  padding: 2.4rem;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
+@media screen and (min-width: 1024px) {
   .container {
     padding: 3rem 4rem;
     margin: 0;
