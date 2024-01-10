@@ -1,0 +1,45 @@
+.container-service {
+  border-bottom: 0.3rem solid var(--brand-color);
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 30.7rem;
+  height: 14rem;
+  background-color: var(--dark-20);
+}
+
+.container-service h3 {
+  color: var(--dark-40);
+  font-size: 1.3rem;
+}
+
+.icon-service {
+  width: 5.6rem;
+  height: 5.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .container-service {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 35rem;
+    height: 24rem;
+    background-color: var(--dark-20);
+  }
+
+  .container-service h3 {
+    width: 12.6rem;
+    color: var(--dark-40);
+    font-size: 2.6rem;
+    font-weight: 500;
+  }
+
+  .icon-service {
+    width: 6.6rem;
+    height: 6.6rem;
+  }
+}
