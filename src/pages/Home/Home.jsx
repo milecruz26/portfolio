@@ -45,7 +45,10 @@ export const Home = () => {
               <button className="download-cv-btn" onClick={openCurriculo}>
                 Download CV
               </button>
-              <button className="contact-btn">Entrar em contato</button>
+
+              <button className="contact-btn">
+                <a href="https://wa.me/85987830966">Entrar em contato</a>
+              </button>
             </div>
           </div>
           <div className="imagem"></div>
