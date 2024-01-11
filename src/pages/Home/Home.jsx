@@ -47,7 +47,7 @@ export const Home = () => {
               </button>
 
               <button className="contact-btn">
-                <a href="https://wa.me/85987830966">Entrar em contato</a>
+                <a href="https://wa.me/+5585987830966">Entrar em contato</a>
               </button>
             </div>
           </div>

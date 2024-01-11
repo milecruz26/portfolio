@@ -44,7 +44,7 @@ export const CircleIcon = () => {
         <h4>mile.criacoes2603@gmail.com</h4>
       </div>
       <div>
-        <a href="https://wa.me/85987830966">
+        <a href="https://wa.me/+5585987830966">
           <div className="circle-icon">
             <img
               src={WhatsAppIcon}
