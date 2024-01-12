@@ -1,5 +1,6 @@
 @import url("../../styles/global.css");
 header {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -7,8 +8,17 @@ header {
   font-size: 1.4rem;
 }
 
-header nav {
+.nav-desktop {
   display: none;
+}
+
+.nav-mobile {
+  position: absolute;
+  top: 0.2rem;
+  background-color: #fff;
+  border: 1px solid red;
+  width: 30rem;
+  height: 30rem;
 }
 main {
   margin: 2rem auto;
@@ -17,15 +27,7 @@ main {
 }
 
 .apresetation-section {
-  /* border: 1px solid red; */
   margin: 2rem 0 3rem 0;
-  /* margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  width: 31.2rem;
-  height: 14.1rem; */
 }
 
 .apresetation-section img {
@@ -41,21 +43,16 @@ main {
 .apresetation-section h3 {
   color: var(--dark-40);
   font-size: 1.6rem;
-  width: 19.8rem;
+  width: 25rem;
   text-align: center;
 }
 
 .container-title-btns {
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   height: 25vh;
-
-  /* display: flex;
-  justify-content: space-between;
-  width: 31.2rem; */
 }
 
 .container-title-btns div {
@@ -89,9 +86,6 @@ main {
 }
 
 .about-me-section {
-  /* height: 51.4rem; */
-
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -113,7 +107,6 @@ main {
 }
 
 .container-projects {
-  /* border: 1px solid red; */
   margin-top: 4rem;
   display: flex;
   flex-direction: column;
@@ -122,7 +115,6 @@ main {
   height: 65rem;
 }
 .container-projects > div {
-  /* border: 1px solid red; */
   height: 60rem;
   display: flex;
   flex-direction: column;
@@ -130,14 +122,12 @@ main {
 }
 
 .service-section {
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   height: 45rem;
   justify-content: space-evenly;
 }
 .service-section > div {
-  /* border: 1px solid red; */
   height: 35rem;
   display: flex;
   flex-direction: column;
@@ -154,14 +144,12 @@ main {
     display: none;
   }
 
-  header > nav {
-    /* border: 1px solid red; */
+  .nav-desktop {
     display: block;
-    /* width: 43%; */
     width: max(43%, 43rem);
   }
 
-  header nav ul {
+  .nav-desktop ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -169,16 +157,16 @@ main {
     font-size: 1.8rem;
     font-weight: 400;
   }
-  header nav ul li {
+  .nav-desktop ul li {
     cursor: pointer;
   }
 
-  header nav ul li > a {
+  .nav-desktop ul li > a {
     text-decoration: none;
     color: var(--white);
   }
 
-  header nav ul li > a:hover {
+  .nav-desktop ul li > a:hover {
     color: var(--dark-40);
   }
 
@@ -187,8 +175,6 @@ main {
   }
 
   .apresetation-section {
-    /* border: 1px solid blue; */
-    /* width: 100%; */
     height: 45vh;
     margin: 0;
     display: flex;
@@ -198,7 +184,6 @@ main {
   }
 
   .apresetation-section h1 {
-    /* border: 1px solid red; */
     font-size: 3.6rem;
   }
 
@@ -215,7 +200,6 @@ main {
 
     height: 100%;
     width: 31vw;
-    /* border: 1px solid blue; */
   }
 
   .container-title-btns > div {
@@ -239,7 +223,6 @@ main {
   }
 
   .imagem {
-    /* border: 1px solid red; */
     height: 95%;
     width: 40vw;
     background-image: url("../../assets/game-dev-2.png");
@@ -257,11 +240,9 @@ main {
     width: 65vw;
   }
   .container-projects {
-    /* border: 1px solid blue; */
     height: 43vh;
   }
   .container-projects > div {
-    /* border: 1px solid blue; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -270,28 +251,26 @@ main {
   }
 
   .service-section {
-    /* border: 1px solid blue; */
     display: flex;
     height: 45rem;
     justify-content: space-evenly;
   }
 
   .service-section > div {
-    /* border: 1px solid blue; */
     display: flex;
     flex-wrap: wrap;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  header > nav {
+  .nav-desktop {
     min-width: 30vw;
     max-width: 50vw;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  header > nav {
+  .nav-desktop {
     min-width: 30vw;
     max-width: 50vw;
   }
@@ -302,17 +281,20 @@ main {
 
   .container-title-btns > div {
     width: 80%;
-    /* border: 1px solid blue; */
   }
 }
 @media screen and (min-width: 1440px) {
-  header > nav {
+  .nav-desktop {
     min-width: 30vw;
     max-width: 50vw;
   }
 
   .apresetation-section h1 {
     width: 22vw;
+  }
+
+  .container-title-btns > h3 {
+    width: 35rem;
   }
 
   .about-me-section > p {
@@ -322,13 +304,12 @@ main {
 }
 
 @media screen and (min-width: 1920px) {
-  header > nav {
+  .nav-desktop {
     min-width: 30vw;
     max-width: 50vw;
   }
 
   .apresetation-section {
-    /* border: 1px solid green; */
     margin-bottom: 5rem;
   }
 
@@ -358,7 +339,6 @@ main {
   }
 
   .container-projects {
-    /* border: 1px solid green; */
     margin: 6rem 0;
     max-height: 45vh;
   }
