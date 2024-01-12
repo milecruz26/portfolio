@@ -7,6 +7,7 @@ export const SkillContainer = () => {
       {datas.map((img) => (
         <div key={img.id} className="card-skill">
           <img src={img.src} alt={img.alt} />
+          <h3>{img.name}</h3>
         </div>
       ))}
     </div>

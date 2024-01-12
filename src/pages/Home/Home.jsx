@@ -6,20 +6,32 @@ import { ServicesContainer } from "../../componets/ServicesContainer/ServicesCon
 import { SkillContainer } from "../../componets/SkillContainer/SkillContainer";
 import { CircleIcon } from "../../componets/CircleIcon/CircleIcon";
 import { Projects } from "../../componets/Projects/Projects";
+import { useState } from "react";
+import NavBar from "../../componets/NavBar/NavBar";
 
 export const Home = () => {
+  const [openMenu, setOpenMenu] = useState(false);
   const openCurriculo = () => {
     const arquivo = "/CV_Jamile_Cruz_da_Silva.pdf";
 
     window.open(arquivo, "_blank");
   };
 
+  const handleClickMenuSand = () => {
+    openMenu ? setOpenMenu(false) : setOpenMenu(true);
+  };
+
   return (
     <div className="container">
       <header>
         <h3>Portfólio</h3>
-        <img src={MenuSand} alt="" />
-        <nav>
+        <img
+          src={MenuSand}
+          alt="menu com 3 linhas"
+          onClick={handleClickMenuSand}
+        />
+        {/* <NavBar /> */}
+        <nav className="nav-desktop">
           <ul>
             <li>
               <a href="#about-me">Sobre mim</a>
@@ -40,7 +52,10 @@ export const Home = () => {
         <section className="apresetation-section">
           <div className="container-title-btns">
             <h1>Olá, eu sou a Jamile Cruz! </h1>
-            <h3>Desenvolvedora FullStack e Front-End</h3>
+            <h3>
+              Desenvolvedora Front-End com experiências em Back-End {";"}
+              {")"}
+            </h3>
             <div>
               <button className="download-cv-btn" onClick={openCurriculo}>
                 Download CV
