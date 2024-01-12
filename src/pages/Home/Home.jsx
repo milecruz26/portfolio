@@ -7,7 +7,7 @@ import { SkillContainer } from "../../componets/SkillContainer/SkillContainer";
 import { CircleIcon } from "../../componets/CircleIcon/CircleIcon";
 import { Projects } from "../../componets/Projects/Projects";
 import { useState } from "react";
-import NavBar from "../../componets/NavBar/NavBar";
+// import NavBar from "../../componets/NavBar/NavBar";
 
 export const Home = () => {
   const [openMenu, setOpenMenu] = useState(false);
