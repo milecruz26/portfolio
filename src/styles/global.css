@@ -37,12 +37,18 @@
 
 html {
   font-size: 62.5%;
-  font-family: "DM Sans";
+  font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
 }
 
 body {
   background-color: var(--dark-10);
-  /* display: flex; */
+
+  width: clamp(33rem, 80%, 102rem);
+  margin: 0 auto;
+  overflow-x: hidden;
+  padding: 1rem;
 }
 
 h2 {
@@ -52,25 +58,18 @@ h2 {
   font-weight: 700;
 }
 .container {
-  /* border: 1px solid red; */
-  padding: 2.4rem;
+  margin: 0 auto;
+  width: clamp(30rem, 70%, 144rem);
 }
 
-@media screen and (min-width: 1024px) {
-  .container {
-    padding: 3rem 4rem;
-    margin: 0;
+@media screen and (min-width: 1020px) {
+  body {
+    width: clamp(144rem, 93%, 192rem);
+    margin: 0 auto;
   }
-}
-@media screen and (min-width: 1280px) {
+
   .container {
-    padding: 3rem 3rem;
-    margin: 0 5rem;
-  }
-}
-@media screen and (min-width: 1440px) and (max-width: 2000px) {
-  .container {
-    padding: 5rem 20rem;
-    margin: 0 5rem;
+    margin: 0 auto;
+    width: clamp(100rem, 90%, 170rem);
   }
 }

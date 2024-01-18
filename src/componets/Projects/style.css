@@ -1,13 +1,11 @@
-a {
+.link-project {
   text-decoration: none;
 }
 .project-container {
-  /* border: 1px solid blue; */
   padding: 1.1rem 1.8rem;
-  width: 30.7rem;
-  height: 17.4rem;
-  flex-shrink: 0;
-  border: 0.725px solid var(--dark-30);
+  width: clamp(25rem, 50vw, 43rem);
+
+  height: 20rem;
   background-color: var(--dark-20);
 
   display: flex;
@@ -16,8 +14,8 @@ a {
 }
 
 .project-container > figure {
-  width: 27.5rem;
-  height: 10rem;
+  max-width: 100%;
+  height: 11rem;
   background-size: cover;
 }
 
@@ -43,17 +41,18 @@ a {
   background-image: url("../../assets/projects-img/desafio-05.svg");
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1020px) {
   .project-container {
+    /* border: 5px solid red; */
     cursor: pointer;
     padding: 1rem 1.5rem;
-    width: 30rem;
-    height: 24rem;
+    width: clamp(20rem, 50vw, 36rem);
+    height: clamp(15rem, 50vw, 25rem);
   }
 
   .project-container > figure {
-    width: 27rem;
-    height: 13rem;
+    max-width: 100%;
+    height: 15rem;
   }
 
   .project-container > h3 {
@@ -66,31 +65,5 @@ a {
     color: var(--dark-40);
     font-weight: 400;
     font-size: 1.4rem;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .project-container {
-    /* border: 1px solid green; */
-    padding: 1rem 1.5rem;
-    width: 40rem;
-    height: 28rem;
-  }
-
-  .project-container > figure {
-    width: 37rem;
-    height: 16rem;
-  }
-
-  .project-container > h3 {
-    color: #fff;
-    font-size: 1.9rem;
-    font-weight: 500;
-  }
-
-  .project-container > h4 {
-    color: var(--dark-40);
-    font-weight: 400;
-    font-size: 1.7rem;
   }
 }

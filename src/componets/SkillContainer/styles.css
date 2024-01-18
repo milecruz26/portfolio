@@ -1,9 +1,9 @@
 .container-skils {
   display: flex;
-  height: 32rem;
-  flex-flow: row wrap;
+  margin: 2rem auto;
+  height: 45vh;
+  flex-flow: column wrap;
   justify-content: flex-start;
-  /* align-items: center; */
   align-content: center;
 }
 .card-skill {
@@ -30,13 +30,15 @@
 @media screen and (min-width: 1024px) {
   .container-skils {
     display: flex;
-    height: 26rem;
+    height: 50vh;
     flex-flow: nowrap;
-    justify-content: space-around;
+    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
   }
   .card-skill {
-    height: 17rem;
-    width: 17rem;
+    height: clamp(10rem, 50vh, 20rem);
+    width: clamp(10rem, 50vw, 20rem);
     flex-direction: column;
     justify-content: space-evenly;
     align-content: center;
