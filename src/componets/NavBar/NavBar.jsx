@@ -20,12 +20,12 @@ const NavBar = () => {
   return (
     <div>
       <Box sx={{ display: "flex", alignItems: "center", textAlign: "center" }}>
-        <Tooltip title="Account settings">
+        <Tooltip title="Menu">
           <IconButton
             onClick={handleClick}
             size="small"
             sx={{ ml: 2, color: "#f9f9f9" }}
-            aria-controls={open ? "account-menu" : undefined}
+            aria-controls={open ? "demo-positioned-menu" : undefined}
             aria-haspopup="true"
             aria-expanded={open ? "true" : undefined}
           >
@@ -35,18 +35,27 @@ const NavBar = () => {
       </Box>
       <Menu
         anchorEl={anchorEl}
-        id="account-menu"
+        aria-labelledby="demo-positioned-button"
+        id="demo-positioned-menu"
         open={open}
         onClose={handleClose}
         onClick={handleClose}
         sx={styleNavBar}
-        transformOrigin={{ horizontal: "right", vertical: "top" }}
-        anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
+        transformOrigin={{ vertical: "top", horizontal: "left" }}
+        anchorOrigin={{ vertical: "top", horizontal: "left" }}
       >
-        <MenuItem onClick={handleClose}>Sobre Mim</MenuItem>
-        <MenuItem onClick={handleClose}>Projetos</MenuItem>
-        <MenuItem onClick={handleClose}>Serviços</MenuItem>
-        <MenuItem onClick={handleClose}>Minhas skills</MenuItem>
+        <MenuItem onClick={handleClose}>
+          <a href="#about-me">Sobre mim</a>
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <a href="#projects">Projetos</a>
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <a href="#services">Serviços</a>
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <a href="#my-skills">Minhas skills</a>
+        </MenuItem>
         <MenuItem onClick={handleClose}>Fechar menu</MenuItem>
       </Menu>
     </div>
