@@ -6,8 +6,9 @@ import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
 import { useState } from "react";
 import styleNavBar from "./styleNavBar";
+import "./style.css";
 
-const NavBar = () => {
+const NavBar = (className) => {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -18,7 +19,7 @@ const NavBar = () => {
   };
 
   return (
-    <div>
+    <div className="nav-mobile">
       <Box sx={{ display: "flex", alignItems: "center", textAlign: "center" }}>
         <Tooltip title="Menu">
           <IconButton

@@ -1,25 +1,25 @@
 import "./styles.css";
 import CodeIcon from "../../assets/image/code.svg";
 import SmartphoneIcon from "../../assets/image/smartphone.svg";
-import MenuSand from "../../assets/image/menu-hamburguer.svg";
+// import MenuSand from "../../assets/image/menu-hamburguer.svg";
 import { ServicesContainer } from "../../componets/ServicesContainer/ServicesContainer";
 import { SkillContainer } from "../../componets/SkillContainer/SkillContainer";
 import { CircleIcon } from "../../componets/CircleIcon/CircleIcon";
 import { Projects } from "../../componets/Projects/Projects";
-import { useState } from "react";
-// import NavBar from "../../componets/NavBar/NavBar";
+// import { useState } from "react";
+import NavBar from "../../componets/NavBar/NavBar";
 
 export const Home = () => {
-  const [openMenu, setOpenMenu] = useState(false);
+  // const [openMenu, setOpenMenu] = useState(false);
   const openCurriculo = () => {
     const arquivo = "/CV_Jamile_Cruz_da_Silva.pdf";
 
     window.open(arquivo, "_blank");
   };
 
-  const handleClickMenuSand = () => {
-    openMenu ? setOpenMenu(false) : setOpenMenu(true);
-  };
+  // const handleClickMenuSand = () => {
+  //   openMenu ? setOpenMenu(false) : setOpenMenu(true);
+  // };
 
   return (
     <div className="container">
