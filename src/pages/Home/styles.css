@@ -1,4 +1,6 @@
 @import url("../../styles/global.css");
+@media screen {
+}
 header {
   position: relative;
   display: flex;
@@ -6,6 +8,9 @@ header {
   justify-content: space-between;
   color: var(--white);
   font-size: 1.4rem;
+  margin: 2rem auto;
+
+  width: clamp(30rem, 90%, 76.7rem);
 }
 
 .nav-desktop {
@@ -16,18 +21,20 @@ header {
   position: absolute;
   top: 0.2rem;
   background-color: #fff;
-  border: 1px solid red;
   width: 30rem;
   height: 30rem;
 }
+
 main {
   margin: 2rem auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .apresetation-section {
-  margin: 2rem 0 3rem 0;
+  margin: 2rem auto 3rem auto;
+  width: clamp(30rem, 90%, 76.7rem);
 }
 
 .apresetation-section img {
@@ -59,10 +66,11 @@ main {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  width: clamp(30rem, 55%, 76.7rem);
 }
 
 .container-title-btns div > button {
-  width: 15rem;
+  width: clamp(10rem, 45%, 20rem);
   height: 3rem;
   font-family: "DM Sans";
   font-weight: 500;
@@ -77,7 +85,7 @@ main {
 .contact-btn {
   background-color: var(--dark-10);
   border: 0.697px solid #333;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .contact-btn > a {
@@ -90,6 +98,8 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  margin: 0 auto;
+  width: clamp(30rem, 90%, 76.7rem);
 }
 .about-me-section h1 {
   color: var(--white);
@@ -107,25 +117,32 @@ main {
 }
 
 .container-projects {
-  margin-top: 4rem;
   display: flex;
+  margin: 2rem auto;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 65rem;
+  align-content: center;
+  height: 100vh;
+  width: clamp(30rem, 90%, 76.7rem);
 }
 .container-projects > div {
-  height: 60rem;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
+
+  height: 95vh;
+  width: clamp(30rem, 50vw, 60rem);
 }
 
 .service-section {
   display: flex;
   flex-direction: column;
-  height: 45rem;
+  min-height: 46rem;
   justify-content: space-evenly;
+  align-items: center;
+  width: clamp(30rem, 90%, 120rem);
 }
 .service-section > div {
   height: 35rem;
@@ -133,20 +150,27 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  width: clamp(30rem, 80%, 80rem);
 }
 
 .skill-section {
   display: flex;
   flex-direction: column;
+  width: clamp(30rem, 70%, 76.8rem);
 }
-@media screen and (min-width: 1024px) and (max-width: 2000px) {
+
+@media screen and (min-width: 1020px) {
+  header {
+    height: 4.2rem;
+    width: clamp(100rem, 90%, 170rem);
+  }
   header > img {
     display: none;
   }
 
   .nav-desktop {
     display: block;
-    width: max(43%, 43rem);
+    width: clamp(30rem, 40%, 80rem);
   }
 
   .nav-desktop ul {
@@ -154,7 +178,7 @@ main {
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
-    font-size: 1.8rem;
+    font-size: clamp(1.6rem, 2vw, 1.8rem);
     font-weight: 400;
   }
   .nav-desktop ul li {
@@ -171,10 +195,11 @@ main {
   }
 
   main {
-    margin: 0;
+    margin: 0 auto;
   }
 
   .apresetation-section {
+    width: 90%;
     height: 45vh;
     margin: 0;
     display: flex;
@@ -184,6 +209,7 @@ main {
   }
 
   .apresetation-section h1 {
+    width: clamp(22rem, 60vw, 24rem);
     font-size: 3.6rem;
   }
 
@@ -205,6 +231,7 @@ main {
   .container-title-btns > div {
     display: flex;
     justify-content: space-between;
+    width: clamp(30rem, 60vw, 34rem);
   }
 
   .container-title-btns div button {
@@ -224,7 +251,7 @@ main {
 
   .imagem {
     height: 95%;
-    width: 40vw;
+    width: 26%;
     background-image: url("../../assets/game-dev-2.png");
     background-position: center;
     background-size: contain;
@@ -233,26 +260,31 @@ main {
 
   .about-me-section {
     height: 70rem;
+    width: 90%;
   }
 
   .about-me-section > p {
     font-size: 1.8rem;
-    width: 65vw;
+    text-align: justify;
   }
   .container-projects {
-    height: 43vh;
+    width: 90%;
+    justify-content: center;
   }
   .container-projects > div {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin: 0 auto;
     width: 100%;
+    height: 50vh;
   }
 
   .service-section {
     display: flex;
     height: 45rem;
+    width: 90%;
     justify-content: space-evenly;
   }
 
@@ -260,86 +292,9 @@ main {
     display: flex;
     flex-wrap: wrap;
   }
-}
 
-@media screen and (min-width: 1024px) {
-  .nav-desktop {
-    min-width: 30vw;
-    max-width: 50vw;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .nav-desktop {
-    min-width: 30vw;
-    max-width: 50vw;
-  }
-
-  .apresetation-section h1 {
-    width: 20rem;
-  }
-
-  .container-title-btns > div {
-    width: 80%;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .nav-desktop {
-    min-width: 30vw;
-    max-width: 50vw;
-  }
-
-  .apresetation-section h1 {
-    width: 22vw;
-  }
-
-  .container-title-btns > h3 {
-    width: 35rem;
-  }
-
-  .about-me-section > p {
-    text-align: center;
-    width: 61vw;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .nav-desktop {
-    min-width: 30vw;
-    max-width: 50vw;
-  }
-
-  .apresetation-section {
-    margin-bottom: 5rem;
-  }
-
-  .container-title-btns > h1 {
-    width: 15vw;
-    font-size: 4.2rem;
-  }
-
-  .container-title-btns > h3 {
-    font-size: 2.2rem;
-  }
-
-  .container-title-btns > div {
-    width: 70%;
-  }
-
-  .container-title-btns > div > button {
-    width: 48%;
-    height: 4.5rem;
-    font-size: 1.6rem;
-  }
-
-  .about-me-section > p {
-    text-align: center;
-    width: 61vw;
-    font-size: 2.5rem;
-  }
-
-  .container-projects {
-    margin: 6rem 0;
-    max-height: 45vh;
+  .skill-section {
+    height: 50vh;
+    width: 90%;
   }
 }
