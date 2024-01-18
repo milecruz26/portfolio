@@ -25,12 +25,12 @@ export const Home = () => {
     <div className="container">
       <header>
         <h3>Portfólio</h3>
-        <img
+        {/* <img
           src={MenuSand}
           alt="menu com 3 linhas"
           onClick={handleClickMenuSand}
-        />
-        {/* <NavBar /> */}
+        /> */}
+        <NavBar />
         <nav className="nav-desktop">
           <ul>
             <li>
