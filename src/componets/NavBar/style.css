@@ -1,5 +1,9 @@
+.nav-mobile {
+  /* border: 1px solid red; */
+  background-color: transparent;
+}
 @media screen and (min-width: 1020px) {
-  .nav-mobile {
+  .MuiBox-root {
     display: none;
   }
 }

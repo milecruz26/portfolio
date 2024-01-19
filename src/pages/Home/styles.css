@@ -162,7 +162,9 @@ main {
 @media screen and (min-width: 1020px) {
   header {
     height: 4.2rem;
-    width: clamp(100rem, 90%, 170rem);
+    min-width: 72vw;
+    max-width: 90vw;
+    /* width: clamp(100rem, 90%, 170rem); */
   }
   header > img {
     display: none;
@@ -170,7 +172,9 @@ main {
 
   .nav-desktop {
     display: block;
-    width: clamp(30rem, 40%, 80rem);
+    min-width: 38vw;
+    max-width: 70vw;
+    /* width: clamp(30rem, 40%, 80rem); */
   }
 
   .nav-desktop ul {
@@ -250,8 +254,12 @@ main {
   }
 
   .imagem {
-    height: 95%;
-    width: 26%;
+    min-height: 24vw;
+    max-height: 30vw;
+    /* height: 95%; */
+    min-width: 25vw;
+    max-width: 30vw;
+    /* width: 26%; */
     background-image: url("../../assets/game-dev-2.png");
     background-position: center;
     background-size: contain;
@@ -259,7 +267,7 @@ main {
   }
 
   .about-me-section {
-    height: 70rem;
+    height: 70vh;
     width: 90%;
   }
 
@@ -268,8 +276,14 @@ main {
     text-align: justify;
   }
   .container-projects {
-    width: 90%;
+    /* border: 1px solid red; */
     justify-content: center;
+
+    height: 70vh;
+    /* width: 90%; */
+
+    min-width: 72vw;
+    max-width: 90vw;
   }
   .container-projects > div {
     display: flex;
@@ -282,19 +296,30 @@ main {
   }
 
   .service-section {
+    /* border: 1px solid red; */
     display: flex;
     height: 45rem;
-    width: 90%;
+
+    min-width: 72vw;
+    max-width: 90vw;
+
+    /* width: 90%; */
     justify-content: space-evenly;
   }
 
   .service-section > div {
     display: flex;
     flex-wrap: wrap;
+    /* border: 1px solid blue; */
+    width: 100%;
   }
 
   .skill-section {
-    height: 50vh;
+    min-height: 20vh;
+    max-height: 25vh;
     width: 90%;
+    /* border: 1px solid red; */
+    min-width: 72vw;
+    max-width: 90vw;
   }
 }

@@ -20,13 +20,18 @@
   height: 5.6rem;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1020px) {
   .container-service {
+    /* border: 1px solid blueviolet; */
     padding: 2rem;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    width: 35rem;
+    /* width: 35rem; */
+
+    min-width: 25vw;
+    max-width: 30vw;
+
     height: 24rem;
     background-color: var(--dark-20);
   }

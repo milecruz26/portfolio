@@ -64,12 +64,18 @@ h2 {
 
 @media screen and (min-width: 1020px) {
   body {
-    width: clamp(144rem, 93%, 192rem);
+    /* border: 1px solid greenyellow; */
+    min-width: 80vw;
+    max-width: 90vw;
+    /* width: clamp(144rem, 93%, 192rem); */
     margin: 0 auto;
   }
 
   .container {
+    /* border: 1px solid green; */
     margin: 0 auto;
-    width: clamp(100rem, 90%, 170rem);
+    min-width: 75vw;
+    max-width: 90vw;
+    /* width: clamp(100rem, 90%, 170rem); */
   }
 }

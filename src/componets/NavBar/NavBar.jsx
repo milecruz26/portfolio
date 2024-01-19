@@ -7,8 +7,9 @@ import Tooltip from "@mui/material/Tooltip";
 import { useState } from "react";
 import styleNavBar from "./styleNavBar";
 import "./style.css";
+import styleBox from "./styleBox";
 
-const NavBar = (className) => {
+const NavBar = () => {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -19,14 +20,14 @@ const NavBar = (className) => {
   };
 
   return (
-    <div className="nav-mobile">
-      <Box sx={{ display: "flex", alignItems: "center", textAlign: "center" }}>
+    <div>
+      <Box sx={styleBox}>
         <Tooltip title="Menu">
           <IconButton
             onClick={handleClick}
             size="small"
             sx={{ ml: 2, color: "#f9f9f9" }}
-            aria-controls={open ? "demo-positioned-menu" : undefined}
+            aria-controls={open ? "account-menu" : undefined}
             aria-haspopup="true"
             aria-expanded={open ? "true" : undefined}
           >
@@ -36,14 +37,14 @@ const NavBar = (className) => {
       </Box>
       <Menu
         anchorEl={anchorEl}
-        aria-labelledby="demo-positioned-button"
-        id="demo-positioned-menu"
+        aria-labelledby="basic-button"
+        id="account-menu"
         open={open}
         onClose={handleClose}
         onClick={handleClose}
         sx={styleNavBar}
-        transformOrigin={{ vertical: "top", horizontal: "left" }}
-        anchorOrigin={{ vertical: "top", horizontal: "left" }}
+        transformOrigin={{ horizontal: "right", vertical: "top" }}
+        anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
       >
         <MenuItem onClick={handleClose}>
           <a href="#about-me">Sobre mim</a>
